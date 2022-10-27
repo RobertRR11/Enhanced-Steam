@@ -1,0 +1,175 @@
+/* Changes the main background color */
+body.v6 {
+    background: #1c232f !important;
+}
+
+/* Removes the game background to be replaced with a custom one */
+.game_page_background, .game_background_glow {
+    background-image: none !important;
+}
+
+#game_highlights {
+    background: none !important;
+}
+
+.highlight_selector {
+    display: none;
+}
+
+/* Design for custom game background */
+.game_page_hero {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    filter: saturate(0.4) opacity(0.4);
+    -webkit-mask: linear-gradient(180deg, black 58%, rgba(0, 0, 0, 0) 95%),radial-gradient(15.77% 44.22% at 50% 104.95%, rgba(66, 66, 66, 0) 0%, #333333 100%),radial-gradient(30.95% 86.8% at 30.69% 13.2%, rgba(66, 66, 66, 0.33) 0%, #333333 100%),radial-gradient(51.31% 143.89% at 49.99% 24.75%, #000000 0%, #000000 52.6%, rgba(0, 0, 0, 0.18) 83.33%, rgba(0, 0, 0, 0) 95.31%);
+    mask: linear-gradient(180deg, black 58%, rgba(0, 0, 0, 0) 95%),radial-gradient(15.77% 44.22% at 50% 104.95%, rgba(66, 66, 66, 0) 0%, #333333 100%),radial-gradient(30.95% 86.8% at 30.69% 13.2%, rgba(66, 66, 66, 0.33) 0%, #333333 100%),radial-gradient(51.31% 143.89% at 49.99% 24.75%, #000000 0%, #000000 52.6%, rgba(0, 0, 0, 0.18) 83.33%, rgba(0, 0, 0, 0) 95.31%);
+    -webkit-mask-composite: source-in;
+    mask-composite: source-in;
+}
+
+.glance_ctn, .broadcast_embeddable_bordered_container_3cQe7 {
+    background: rgba(24, 26, 33, 0.5) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.game_description_snippet, .glance_ctn_responsive_left, .glance_tags_ctn, .glance_details {
+    padding-left: 16px;
+}
+
+.glance_tags_ctn {
+    padding-bottom: 16px;
+}
+
+.game_header_image_full {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.highlight_strip_item {
+    opacity: 0.5;
+    transition: opacity 200ms ease-in-out;
+}
+
+.highlight_strip_item:hover, .highlight_strip_item.focus {
+    opacity: 1;
+}
+
+.highlight_strip_item.focus {
+    border: #fff solid 1px;
+}
+
+/* Adds a small border radius to everything */
+#highlight_player_area, .glance_ctn, .highlight_strip_item, .highlight_strip_item > img, .broadcast_embeddable_bordered_container_3cQe7, .saleEventBannerStyle {
+    border-radius: 4px;
+}
+
+/* Makes the game name bolder */
+.apphub_AppName {
+    font-weight: 500 !important;
+    letter-spacing: .02em;
+}
+
+/* Changes colors of the review scores */
+.summary.column:nth-child(2) {
+    color: #6b8aaa;
+}
+
+.game_review_summary.positive {
+    color: #32ad32 !important;
+}
+
+.game_review_summary.mixed {
+    color: #d8d81e !important;
+}
+
+/* Makes the blue and green buy/bundle/library buttons have animated backgrounds */
+.btn_blue_steamui > span, .btn_green_steamui > span {
+    transition: all .2s ease-out;
+}
+
+.btn_green_steamui > span {
+    background: linear-gradient( to right, #8ed629 5%, #588a1b 95%) !important;
+    /* Love it when Chrome doesn't even want to add the values if you're not using !important */
+    background-position: 90% !important;
+    background-size: 200% 100% !important;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+}
+
+.btn_green_steamui:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover > span {
+    background: linear-gradient( to right, #8ed629 5%, #588a1b 95%) !important;
+    background-position: 20% !important;
+    background-size: 200% 100% !important;
+    box-shadow: 2px 2px 15px rgb(0 0 0 / 50%);
+}
+
+/*
+    Better discount label design based on the game category pages
+    Currently commented out because during development they decided to update the discount labels everywhere
+*/
+/*.discount_pct {
+    background: none !important;
+    color: #beee11 !important;
+    text-shadow: 0 0 10px rgb(0 0 0 / 70%);
+    font-weight: 700;
+}
+
+.discount_block:not(.no_discount) .discount_final_price {
+    font-family: "Motiva Sans", Arial, Helvetica, sans-serif !important;
+    color: #cbf240 !important;
+    text-shadow: 0 0 10px rgb(0 0 0 / 70%);
+}
+
+.discount_original_price {
+    font-family: "Motiva Sans", Arial, Helvetica, sans-serif !important;
+    color: #b2b5bb !important;
+    text-decoration: none !important;
+}
+
+.discount_original_price::before {
+    content: "";
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px solid darkred;
+    transform: skewY(-15deg);
+}
+
+.discount_block_inline .discount_original_price::before {
+    width: 32px;
+    left: 38px;
+}
+
+.small_cap .discount_original_price::before {
+    left: 96px;
+}
+*/
+
+/* Modern button designs */
+.btnv6_blue_hoverfade, .queue_btn_menu > .queue_menu_arrow {
+    background: #3d4450 !important;
+    transition: all .2s ease-out;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+}
+
+.btnv6_blue_hoverfade > span {
+    transition: all .2s ease-out;
+    color: #dfe3e6;
+}
+
+.btnv6_blue_hoverfade:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover, .queue_btn_menu > .queue_menu_arrow:hover {
+    background: #464d58 !important;
+    color: #fff !important;
+    box-shadow: 2px 2px 15px rgb(0 0 0 / 50%);
+}
+
+.btnv6_blue_hoverfade:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover > span {
+    color: #fff;
+}
+
+/* Valve still using spritesheets for icons 😭 */
+.arrow_next, .reportv6, .queue_btn_menu > .queue_menu_arrow img {
+	filter: saturate(0) contrast(2)
+}

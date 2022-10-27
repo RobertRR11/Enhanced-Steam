@@ -1,0 +1,54 @@
+/*
+    Use Steam's custom scrollbar on every page
+*/
+::-webkit-scrollbar {
+    height: 12px;
+    width: 14px;
+    background: transparent;
+    z-index: 12;
+    overflow: visible;
+}
+::-webkit-scrollbar-corner {
+    background: #202020;
+}
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #434953;
+    border-radius: 10px;
+    z-index: 12;
+    border: 4px solid rgba(0,0,0,0);
+    background-clip: padding-box;
+    transition: background-color .32s ease-in-out;
+    margin: 4px;
+    min-height: 32px;
+    min-width: 32px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#4e5157;
+}
+
+/* 
+    Makes various green buttons have a more modern look, mainly being used on buy or login buttons
+*/
+.btn_green_white_innerfade, #btn_purchase_gift, #btn_purchase_self {
+    background-image: radial-gradient(circle at top left, #85a805 10%, #6a8704 80%) !important;
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 20%) !important;
+    transition: all .23s ease-in-out !important;
+    border-radius: 2px !important;
+}
+.btn_green_white_innerfade:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover,
+#btn_purchase_gift:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover,
+#btn_purchase_self:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover {
+    background-image: radial-gradient(circle at top left, #a3cf06 0%, #6a8704 120%) !important;
+    box-shadow: 2px 2px 15px rgb(0 0 0 / 50%) !important;
+}
+.btn_green_white_innerfade > span, #btn_purchase_gift > span, #btn_purchase_self > span {
+    background: none !important;
+    color: #dfe3e6 !important;
+}
+.btn_green_white_innerfade:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover > span,
+#btn_purchase_gift:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover > span,
+#btn_purchase_self:not(.btn_disabled):not(:disabled):not(.btn_active):not(.active):hover > span {
+    background: none !important;
+    color: #fff !important;
+}

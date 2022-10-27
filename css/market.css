@@ -1,0 +1,24 @@
+.market_large_tab_well > img {
+    display: none;
+}
+
+.pagecontent {
+    background: url(https://store.steampowered.com/public/images/v6/colored_body_top.png?v=2) center top no-repeat #1b2838;
+}
+
+.market_header_bg {
+    background: linear-gradient(90deg, #75b022 5%, #588a1b 95%);
+}
+
+#BG_top, .market_header_logo {
+    background: none !important;
+}
+
+.market_title_text {
+    font-weight: 500 !important;
+    letter-spacing: .02em;
+}
+
+.market_subtitle_text {
+    color: #e5e5e5 !important;
+}

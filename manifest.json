@@ -1,0 +1,31 @@
+{
+  "name": "Enhanced Steam",
+  "description": "Modernizes the Steam UI",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "*://*.steampowered.com/*",
+    "*://steamcommunity.com/*",
+	"tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.steampowered.com/*", "*://steamcommunity.com/*"],
+	    "css": [ "./css/global.css" ]
+    },
+    {
+      "matches": ["*://*.steampowered.com/agecheck/*"],
+      "js": ["./js/agecheck.js"],
+	    "css": [ "./css/agecheck.css" ]
+    },
+    {
+      "matches": ["*://steamcommunity.com/market/*"],
+	    "css": [ "./css/market.css" ]
+    },
+    {
+      "matches": ["*://*.steampowered.com/app/*"],
+      "js": ["./js/app.js"],
+	    "css": [ "./css/app.css" ]
+    }
+  ]
+}
