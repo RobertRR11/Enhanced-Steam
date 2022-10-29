@@ -7,6 +7,7 @@ Most of the code (including css) right now is just a concept and not yet ready f
 ### Current features are:
 - Redesigned age verification page
 - Redesigned game page (WIP)
+- Redesigned user profile game pages (WIP)
 - Modern scrollbars, buttons and more based on other newer pages
 
 ### Planned:
@@ -15,7 +16,7 @@ Most of the code (including css) right now is just a concept and not yet ready f
 
 ### Todo for features already being worked on:
 - Make game page use the full screen width
-- Improve other parts of game page (for example if the content is geoblocked)
+- Improve other parts of game page (for example if the content is geoblocked or the achievements page)
 
 ### Screenshots (before/after):
 ![image](https://user-images.githubusercontent.com/57044042/198393137-b35c51aa-8327-4469-a764-da83ba524f5d.png)

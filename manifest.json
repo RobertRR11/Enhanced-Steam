@@ -15,17 +15,22 @@
     },
     {
       "matches": ["*://*.steampowered.com/agecheck/*"],
-      "js": ["./js/agecheck.js"],
-	    "css": [ "./css/agecheck.css" ]
+      "js": ["./js/store/agecheck.js"],
+	    "css": [ "./css/store/agecheck.css" ]
     },
     {
       "matches": ["*://steamcommunity.com/market/*"],
-	    "css": [ "./css/market.css" ]
+	    "css": [ "./css/community/market.css" ]
     },
     {
       "matches": ["*://*.steampowered.com/app/*"],
-      "js": ["./js/app.js"],
-	    "css": [ "./css/app.css" ]
+      "js": ["./js/store/app.js"],
+	    "css": [ "./css/store/app.css" ]
+    },
+    {
+      "matches": ["*://steamcommunity.com/profiles/*/games/*", "*://steamcommunity.com/id/*/games/*"],
+      "css": ["./css/community/profile/games.css"],
+      "js": ["./js/community/profile/games.js"]
     }
   ]
 }

@@ -1,0 +1,30 @@
+/* Changes the main background color */
+body {
+    background: #1c232f !important;
+}
+
+/*
+    Improves the achievement progress bar
+    Also what the fuck was Valve thinking when literally making the border of the progress bar 4 seperate GIF files https://i.imgur.com/qCGh0pu.png
+*/
+.achievement_progress {
+    width: 100%;
+    background-color: #000;
+    border-radius: 2px;
+    margin: 4px 0 6px 0;
+}
+.achievement_progress div {
+    background-color: #2d73ff;
+    height: 8px;
+    border-radius: 2px;
+}
+
+.recentAchievements {
+    width: 180px;
+}
+.recentAchievements img[height="12"], .recentAchievements br {
+    display: none;
+}
+.recentAchievementsImg {
+    padding: 0 4px 0 0 !important;
+}
