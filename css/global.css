@@ -52,3 +52,39 @@
     background: none !important;
     color: #fff !important;
 }
+
+/*
+    Custom "on wishlist" and "in library" banners that are expandable, based on the stats page
+*/
+.wishlist_banner, .owned_banner {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 3px 4px 3px 4px;
+    font-size: 11px;
+    color: #111;
+    box-shadow: 0 0 10px rgb(0 0 0 / 90%);
+    box-sizing: border-box;
+    font-family: "Motiva Sans",Arial,Helvetica,sans-serif;
+    left: 0;
+    top: 14px;
+    background-color: #66c0f4;
+    height: 18px;
+    align-items: center;
+    z-index: 5;
+}
+
+.wishlist_banner_img, .owned_banner_img {
+    /* Some pages change properties of all images, that's why this is needed */
+    width: 10px !important;
+    height: 10px !important;
+    opacity: 1 !important;
+}
+
+.wishlist_banner_text, .owned_banner_text {
+    display: none;
+}
+
+.ds_wishlist:hover .wishlist_banner_text, .ds_owned:hover .owned_banner_text {
+    display: block;
+}

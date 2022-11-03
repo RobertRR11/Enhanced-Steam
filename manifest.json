@@ -2,30 +2,33 @@
   "name": "Enhanced Steam",
   "description": "Modernizes the Steam UI",
   "version": "1.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
     "*://*.steampowered.com/*",
-    "*://steamcommunity.com/*",
-	"tabs"
+    "*://steamcommunity.com/*"
   ],
   "content_scripts": [
     {
       "matches": ["*://*.steampowered.com/*", "*://steamcommunity.com/*"],
-	    "css": [ "./css/global.css" ]
+      "css": [ "./css/global.css" ],
+      "js": [ "./js/global.js" ]
     },
     {
       "matches": ["*://*.steampowered.com/agecheck/*"],
-      "js": ["./js/store/agecheck.js"],
-	    "css": [ "./css/store/agecheck.css" ]
+      "css": [ "./css/store/agecheck.css" ],
+      "js": ["./js/store/agecheck.js"]
     },
     {
       "matches": ["*://steamcommunity.com/market/*"],
-	    "css": [ "./css/community/market.css" ]
+      "css": [ "./css/community/market.css" ]
     },
     {
       "matches": ["*://*.steampowered.com/app/*"],
-      "js": ["./js/store/app.js"],
-	    "css": [ "./css/store/app.css" ]
+      "css": [ "./css/store/app.css" ],
+      "js": ["./js/store/app.js"]
     },
     {
       "matches": ["*://steamcommunity.com/profiles/*/games/*", "*://steamcommunity.com/id/*/games/*"],
