@@ -7,7 +7,7 @@ Most of the code (including css) right now is just a concept and not yet ready f
 ### Current features are:
 - Redesigned age verification page
 - Redesigned game page (WIP)
-- Redesigned user profile game pages (WIP)
+- Redesigned achievement and game lists (WIP)
 - New "on wishlist" and "in library" banners
 - Modern scrollbars, buttons and more based on other newer pages
 

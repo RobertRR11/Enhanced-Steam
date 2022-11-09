@@ -3,6 +3,119 @@ body {
     background: #1c232f !important;
 }
 
+/* Design for custom game background */
+.game_page_hero {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    filter: saturate(0.4) opacity(0.4);
+    -webkit-mask: linear-gradient(180deg, black 58%, rgba(0, 0, 0, 0) 95%),radial-gradient(15.77% 44.22% at 50% 104.95%, rgba(66, 66, 66, 0) 0%, #333333 100%),radial-gradient(30.95% 86.8% at 30.69% 13.2%, rgba(66, 66, 66, 0.33) 0%, #333333 100%),radial-gradient(51.31% 143.89% at 49.99% 24.75%, #000000 0%, #000000 52.6%, rgba(0, 0, 0, 0.18) 83.33%, rgba(0, 0, 0, 0) 95.31%);
+    mask: linear-gradient(180deg, black 58%, rgba(0, 0, 0, 0) 95%),radial-gradient(15.77% 44.22% at 50% 104.95%, rgba(66, 66, 66, 0) 0%, #333333 100%),radial-gradient(30.95% 86.8% at 30.69% 13.2%, rgba(66, 66, 66, 0.33) 0%, #333333 100%),radial-gradient(51.31% 143.89% at 49.99% 24.75%, #000000 0%, #000000 52.6%, rgba(0, 0, 0, 0.18) 83.33%, rgba(0, 0, 0, 0) 95.31%);
+    -webkit-mask-composite: source-in;
+    mask-composite: source-in;
+}
+
+/* Improve achievements table */
+.pagecontent {
+    font-family: "Motiva Sans", Arial, Helvetica, sans-serif !important;
+}
+
+.maincontent {
+    background: rgb(0 0 0 / 31%) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 12px 12px 1px 12px !important;
+}
+
+#mainContents {
+    padding: 0 !important;
+}
+
+/* Removes the tab menu that isn't even used */
+#tabs, #subtabs {
+    display: none;
+}
+
+.profile_small_header_bg {
+    background-image: none !important;
+    margin-bottom: -9px !important;
+}
+
+.profile_small_header_texture {
+    background: #23262e !important;
+    box-shadow: 0 0 8px 3px rgb(0 0 0 / 30%);
+    z-index: 1;
+}
+
+.compareImg {
+    display: none;
+}
+
+.achieveRow {
+    background: #23262e;
+}
+
+.achieveImgHolder {
+    padding: 10px !important;
+    position: absolute;
+    z-index: 41;
+}
+
+#personalAchieve .achieveImgHolder {
+    top: 0 !important;
+}
+
+.achieveTxtHolder {
+    height: 84px;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.achieveFill {
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    background: #31343e !important;
+}
+
+.achieveTxtHolder {
+    background: none !important;
+}
+
+.achieveTxtHolder:not(#personalAchieve .achieveTxtHolder) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.achieveTxt {
+    padding: 0 !important;
+    margin-right: auto;
+    margin-left: 85px;
+}
+
+#personalAchieve .achieveTxt {
+    margin-left: 13px;
+}
+
+.achieveTxt h3 {
+    color: #dcdedf !important;
+    font-weight: 500 !important;
+}
+
+.achieveTxt h5 {
+    color: #a4a8ab !important;
+}
+
+.achievePercent {
+    margin-left: auto;
+    margin-right: 10px !important;
+    margin-top: 0 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    font-weight: 500;
+}
+
 /*
     Improves the achievement progress bar
     Also what the fuck was Valve thinking when literally making the border of the progress bar 4 seperate GIF files https://i.imgur.com/qCGh0pu.png
