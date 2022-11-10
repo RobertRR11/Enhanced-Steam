@@ -31,7 +31,7 @@
       "js": ["./js/store/app.js"]
     },
     {
-      "matches": ["*://steamcommunity.com/profiles/*/games/*", "*://steamcommunity.com/id/*/games/*", "*://steamcommunity.com/stats/*/achievements", "*://steamcommunity.com/profiles/*/stats/*/achievements*"],
+      "matches": ["*://steamcommunity.com/profiles/*/games/*", "*://steamcommunity.com/id/*/games/*", "*://steamcommunity.com/stats/*/achievements*", "*://steamcommunity.com/profiles/*/stats/*/achievements*"],
       "css": ["./css/community/profile/games.css"],
       "js": ["./js/community/profile/games.js"]
     }

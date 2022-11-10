@@ -31,11 +31,29 @@ body {
     padding: 0 !important;
 }
 
-/* Removes the tab menu that isn't even used */
-#tabs, #subtabs {
+#headerContent, #topSummaryBoxContent {
+    background: none !important;
+    min-height: 0 !important;
+    padding: 6px 10px !important;
+}
+
+#headerContentLeft, #headerContentRight {
+    color: #dcdedf !important;
+}
+
+#headerContentLeft .wt {
+    color: #fff !important
+}
+
+/* Removes the tab menu that isn't even used, duplicate achievement images and useless <br> elements on some pages */
+#tabs, #subtabs, .compareImg, #topSummaryLeft br:first-child{
     display: none;
 }
 
+/*
+    Valve literally uses a image for a single background color with a box shadow
+    See https://community.akamai.steamstatic.com/public/images/profile/profile_header_small_bg_column.png
+*/
 .profile_small_header_bg {
     background-image: none !important;
     margin-bottom: -9px !important;
@@ -47,10 +65,53 @@ body {
     z-index: 1;
 }
 
-.compareImg {
+/* Improves the title of the global achievements statistics page */
+.profile_subpage_column h2 {
+    padding-top: 14px !important;
+    padding-left: 24px !important;
+    color: #1999ff !important;
+	font-weight: 500 !important;
+	letter-spacing: .02em;
+}
+
+.profile_subpage_column h1 {
+    padding-left: 24px !important;
+    color: #dfe3e6 !important;
+    font-weight: 500 !important;
+	letter-spacing: .02em;
+}
+
+.profile_small_header_additional {
+    right: 12px !important;
+}
+
+#compareAvatar {
     display: none;
 }
 
+.profile_small_header_avatar {
+    top: 17px !important;
+    left: 17px !important;
+}
+
+.profile_small_header_text {
+    left: 101px !important;
+}
+
+#tsblTitle {
+    width: 180px !important;
+}
+
+#tsblTitle, #topSummaryAchievements div:first-child {
+    color: #dcdedf !important;
+}
+
+#tsblVal {
+    color: #fff !important;
+    line-height: 18px !important;
+}
+
+/* Improves the various parts of the achievement rows */
 .achieveRow {
     background: #23262e;
 }
@@ -116,8 +177,12 @@ body {
     font-weight: 500;
 }
 
+.achieveUnlockTime {
+    color: #777e86 !important;
+}
+
 /*
-    Improves the achievement progress bar
+    Custom achievement progress bar for some pages
     Also what the fuck was Valve thinking when literally making the border of the progress bar 4 seperate GIF files https://i.imgur.com/qCGh0pu.png
 */
 .achievement_progress {
@@ -140,4 +205,17 @@ body {
 }
 .recentAchievementsImg {
     padding: 0 4px 0 0 !important;
+}
+
+/* Modified achievement bar */
+.achieveBar {
+    background: #000 !important;
+    border-radius: 2px;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.achieveBarProgress {
+    background-color: #2d73ff !important;
+    border-radius: 2px;
 }
