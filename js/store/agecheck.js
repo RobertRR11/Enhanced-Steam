@@ -1,3 +1,7 @@
 const appId = window.location.href.split("app/")[1].slice(0, -1);
+var hero = document.createElement("img");
 
-document.getElementsByClassName("responsive_page_content")[0].style.background = `url("https://cdn.akamai.steamstatic.com/steam/apps/${appId}/page_bg_generated_v6b.jpg") no-repeat`;
+hero.className = "game_page_hero";
+hero.src = `https://cdn.cloudflare.steamstatic.com/steam/apps/${appId}/library_hero.jpg`;
+
+document.getElementsByClassName("responsive_page_template_content")[0].prepend(hero)

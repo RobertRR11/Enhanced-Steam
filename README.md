@@ -22,8 +22,8 @@ Most of the code (including css) right now is just a concept and not yet ready f
 > **Note**
 > Any games or profiles shown in screenshots or example links are purely examples and not intended to promote.
 
-![image](https://user-images.githubusercontent.com/57044042/198393137-b35c51aa-8327-4469-a764-da83ba524f5d.png)
-![image](https://user-images.githubusercontent.com/57044042/198393150-5a3ac349-bf86-418e-97f4-44538c2530e3.png)
-![image](https://user-images.githubusercontent.com/57044042/201189438-f97bb0b9-7054-469c-9cd6-08a96b16985b.png)
+![agecheck](./screenshots/agecheck.png)
+![app](./screenshots/app.png)
+![achievements](./screenshots/achievements.png)
 
 > Enhanced Steam is not associated or affiliated with Steam or Valve Corporation. Steam is a trademark and/or registered trademark of Valve Corporation.

@@ -1,5 +1,17 @@
-.responsive_page_content {
-	background-size: 100% !important;
+.game_page_hero {
+    position: fixed;
+    z-index: -1;
+    width: 120%;
+	left: -10%;
+    filter: saturate(0.6) opacity(0.6);
+    -webkit-mask: linear-gradient(180deg, black 58%, rgba(0, 0, 0, 0) 100%),radial-gradient(15.77% 44.22% at 50% 104.95%, rgba(66, 66, 66, 0) 0%, #333333 100%),radial-gradient(30.95% 86.8% at 30.69% 13.2%, rgba(66, 66, 66, 0.33) 0%, #333333 100%),radial-gradient(51.31% 143.89% at 49.99% 24.75%, #000000 0%, #000000 52.6%, rgba(0, 0, 0, 0.18) 83.33%, rgba(0, 0, 0, 0) 95.31%);
+    mask: linear-gradient(180deg, black 58%, rgba(0, 0, 0, 0) 95%),radial-gradient(15.77% 44.22% at 50% 104.95%, rgba(66, 66, 66, 0) 0%, #333333 100%),radial-gradient(30.95% 86.8% at 30.69% 13.2%, rgba(66, 66, 66, 0.33) 0%, #333333 100%),radial-gradient(51.31% 143.89% at 49.99% 24.75%, #000000 0%, #000000 52.6%, rgba(0, 0, 0, 0.18) 83.33%, rgba(0, 0, 0, 0) 95.31%);
+    -webkit-mask-composite: source-in;
+    mask-composite: source-in;
+}
+
+body {
+	background: #181a21 !important;
 }
 
 .main_content_ctn {
@@ -32,6 +44,10 @@ div.agegate_text_container > h2 {
 	font-weight: 400 !important;
 	font-size: 14px !important;
 	color: #afafaf !important;
+}
+
+.agegate_tags {
+	margin: 0 auto !important;
 }
 
 .agegate_birthday_selector {
