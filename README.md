@@ -9,7 +9,7 @@ Most of the code (including css) right now is just a concept and not yet ready f
 - Redesigned game page (WIP)
 - Redesigned achievement and game lists
 - New "on wishlist" and "in library" banners
-- Modern scrollbars, buttons and more based on other newer pages
+- Various other enhancements and fixes across multiple pages
 
 ### Planned:
 - Make game page use the full screen width

@@ -88,3 +88,13 @@
 .ds_wishlist:hover .wishlist_banner_text, .ds_owned:hover .owned_banner_text {
     display: block;
 }
+
+/* Center the mobile header menu button */
+#responsive_menu_logo {
+    top: 16px !important;
+}
+
+/* Fix too long game titles in "featured and recommended" section in store page being cut off */
+.store_main_capsule .app_name > div {
+    max-height: 70px !important;
+}
