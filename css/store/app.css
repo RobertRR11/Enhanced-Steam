@@ -105,49 +105,21 @@ body.v6 {
 }
 
 /*
-    Better discount label design based on the game category pages
-    Currently commented out because during development they decided to update the discount labels everywhere
+    Some small changes and fixes to discount labels
 */
-/*.discount_pct {
-    background: none !important;
-    color: #beee11 !important;
-    text-shadow: 0 0 10px rgb(0 0 0 / 70%);
-    font-weight: 700;
+.discount_block .discount_prices {
+    background: transparent !important;
 }
 
-.discount_block:not(.no_discount) .discount_final_price {
-    font-family: "Motiva Sans", Arial, Helvetica, sans-serif !important;
-    color: #cbf240 !important;
-    text-shadow: 0 0 10px rgb(0 0 0 / 70%);
+.discount_block_inline {
+    padding: 5px 0 0 0 !important;
 }
 
-.discount_original_price {
-    font-family: "Motiva Sans", Arial, Helvetica, sans-serif !important;
-    color: #b2b5bb !important;
-    text-decoration: none !important;
+.discount_block_inline .discount_prices {
+    display: flex !important;
 }
 
-.discount_original_price::before {
-    content: "";
-    left: 0px;
-    right: 0px;
-    position: absolute;
-    top: 50%;
-    border-bottom: 1px solid darkred;
-    transform: skewY(-15deg);
-}
-
-.discount_block_inline .discount_original_price::before {
-    width: 32px;
-    left: 38px;
-}
-
-.small_cap .discount_original_price::before {
-    left: 96px;
-}
-*/
-
-/* Modern button designs */
+/* Buttons */
 .btnv6_blue_hoverfade, .queue_btn_menu > .queue_menu_arrow {
     background: #3d4450 !important;
     transition: all .2s ease-out;
@@ -169,7 +141,49 @@ body.v6 {
     color: #fff;
 }
 
+.deck_view_all_action_link {
+    font-size: 12px !important;
+    padding: 0 12px !important;
+    line-height: 22px;
+    color: #dfe3e6 !important;
+    border-radius: 2px !important;
+    transition: all .2s ease-out;
+    background: #3d4450 !important;
+}
+
+.deck_view_all_action_link:hover {
+    background: #464d58 !important;
+    color: #fff !important;
+}
+
 /* Valve still using spritesheets for icons 😭 */
 .arrow_next, .reportv6, .queue_btn_menu > .queue_menu_arrow img {
 	filter: saturate(0) contrast(2)
+}
+
+/* Purchase section */
+.game_area_purchase_game h1 {
+    font-weight: 500 !important;
+    letter-spacing: .02em;
+}
+
+.game_area_purchase_game p {
+    color: #1999ff !important;
+	font-weight: 500 !important;
+	letter-spacing: .02em !important;
+}
+
+
+/* Game tags */
+.app_tag {
+    padding: 0px 6px !important;
+    line-height: 17px !important;
+    background: rgba(112, 129, 137, .25) !important;
+    color: rgba(255,255,255,.60) !important;
+    margin-right: 4px !important;
+}
+
+.app_tag:hover {
+    background: rgba(112, 129, 137, .25) !important;
+    color: rgba(255,255,255,.60) !important;
 }
