@@ -187,3 +187,18 @@ body.v6 {
     background: rgba(112, 129, 137, .25) !important;
     color: rgba(255,255,255,.60) !important;
 }
+
+/* EA Play */
+.game_area_already_owned.master_sub {
+    background: linear-gradient(90deg, rgb(13, 16, 66) 20%, rgb(255, 71, 71) 120%) !important;
+}
+
+.game_area_already_owned .master_sub {
+    padding: 2px 10px !important;
+    background: rgb(13, 16, 66) !important;
+    box-shadow: 0 0 6px rgb(255, 71, 71) !important;
+}
+
+.game_area_already_owned .master_sub > img {
+    display: none;
+}
