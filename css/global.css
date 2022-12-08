@@ -98,3 +98,8 @@
 .store_main_capsule .app_name > div {
     max-height: 70px !important;
 }
+
+/* Fix news in game categories overlapping with game images when hovering */
+.eventrow_AppCapsuleCtn_1kYha {
+    z-index: 1;
+}

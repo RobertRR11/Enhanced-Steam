@@ -111,8 +111,8 @@ body.v6 {
     background: transparent !important;
 }
 
-.discount_block_inline {
-    padding: 5px 0 0 0 !important;
+.small_cap .discount_block_inline {
+    padding: 5px 0 0 !important;
 }
 
 .discount_block_inline .discount_prices {
