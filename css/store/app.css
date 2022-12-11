@@ -21,14 +21,16 @@ body.v6 {
     position: absolute;
     z-index: -1;
     width: 100%;
-    filter: saturate(0.4) opacity(0.4);
+    filter: saturate(0.8) opacity(0.8);
+    height: 650px;
+    object-fit: cover;
     -webkit-mask: linear-gradient(180deg, black 58%, rgba(0, 0, 0, 0) 95%),radial-gradient(15.77% 44.22% at 50% 104.95%, rgba(66, 66, 66, 0) 0%, #333333 100%),radial-gradient(30.95% 86.8% at 30.69% 13.2%, rgba(66, 66, 66, 0.33) 0%, #333333 100%),radial-gradient(51.31% 143.89% at 49.99% 24.75%, #000000 0%, #000000 52.6%, rgba(0, 0, 0, 0.18) 83.33%, rgba(0, 0, 0, 0) 95.31%);
     mask: linear-gradient(180deg, black 58%, rgba(0, 0, 0, 0) 95%),radial-gradient(15.77% 44.22% at 50% 104.95%, rgba(66, 66, 66, 0) 0%, #333333 100%),radial-gradient(30.95% 86.8% at 30.69% 13.2%, rgba(66, 66, 66, 0.33) 0%, #333333 100%),radial-gradient(51.31% 143.89% at 49.99% 24.75%, #000000 0%, #000000 52.6%, rgba(0, 0, 0, 0.18) 83.33%, rgba(0, 0, 0, 0) 95.31%);
     -webkit-mask-composite: source-in;
     mask-composite: source-in;
 }
 
-.glance_ctn, .broadcast_embeddable_bordered_container_3cQe7 {
+.glance_ctn, .broadcast_embeddable_bordered_container_3cQe7, .queue_ctn {
     background: rgba(24, 26, 33, 0.5) !important;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -61,7 +63,7 @@ body.v6 {
 }
 
 /* Adds a small border radius to everything */
-#highlight_player_area, .glance_ctn, .highlight_strip_item, .highlight_strip_item > img, .broadcast_embeddable_bordered_container_3cQe7, .saleEventBannerStyle {
+#highlight_player_area, .glance_ctn, .highlight_strip_item, .highlight_strip_item > img, .broadcast_embeddable_bordered_container_3cQe7, .saleEventBannerStyle, .queue_ctn {
     border-radius: 4px;
 }
 
@@ -141,19 +143,35 @@ body.v6 {
     color: #fff;
 }
 
-.deck_view_all_action_link {
+.deck_view_all_action_link, .steam_curators_block .right a, .game_area_details_specs_ctn .label, .linkbar, .partnereventwebrowembed_SectionButton_1-yPT, .game_area_dlc_section .note {
     font-size: 12px !important;
     padding: 0 12px !important;
-    line-height: 22px;
+    line-height: 22px !important;
     color: #dfe3e6 !important;
     border-radius: 2px !important;
     transition: all .2s ease-out;
     background: #3d4450 !important;
+    border: none !important;
 }
 
-.deck_view_all_action_link:hover {
+.deck_view_all_action_link:hover, .steam_curators_block .right a:hover, .game_area_details_specs_ctn .label:hover, .linkbar:hover, .partnereventwebrowembed_SectionButton_1-yPT:hover, .game_area_dlc_section .note:hover {
     background: #464d58 !important;
     color: #fff !important;
+}
+
+.communitylink_achivement_plusmore {
+    background: #3d4450 !important;
+    color: #dfe3e6 !important;
+    transition: all .2s ease-out;
+}
+
+.communitylink_achivement_plusmore:hover {
+    background: #464d58 !important;
+    color: #fff !important;
+}
+
+.queue_actions_ctn .btn_medium {
+    margin: none !important;
 }
 
 /* Valve still using spritesheets for icons 😭 */
