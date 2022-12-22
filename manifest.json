@@ -31,6 +31,10 @@
       "js": ["./js/store/app.js"]
     },
     {
+      "matches": ["*://*.steampowered.com/cart/*"],
+      "css": [ "./css/store/cart.css" ]
+    },
+    {
       "matches": ["*://steamcommunity.com/profiles/*/games/*", "*://steamcommunity.com/id/*/games/*"],
       "css": ["./css/community/profile/games.css"],
       "js": ["./js/community/profile/games.js"]
