@@ -1,4 +1,4 @@
-const appId = window.location.href.split("app/")[1].slice(0, -1);
+const appId = window.location.href.split("app/")[1].split("/")[0];
 var hero = document.createElement("img");
 
 hero.className = "game_page_hero";
