@@ -77,3 +77,8 @@
 .eventrow_AppCapsuleCtn_1kYha {
     z-index: 1;
 }
+
+/* Why are they adding 120px padding at the bottom in touch mode */
+html.responsive.touch .responsive_page_template_content {
+    padding-bottom: 20px !important;
+}

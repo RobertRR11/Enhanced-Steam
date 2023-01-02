@@ -1,0 +1,127 @@
+/* Chamge background color */
+body.v6 {
+    background: rgb(14, 16, 20) !important;
+}
+
+.page_content {
+    width: 712px !important;
+}
+
+/* Some footer fixes */
+#footer {
+    padding: 16px 0 60px 0 !important;
+    background: #171a21 !important;
+}
+
+#footer .valve_links {
+    float: none !important;
+}
+
+/* Headers */
+.help_header {
+    font-size: 36px !important;
+    font-weight: 600 !important;
+}
+
+.help_intro_text {
+    font-size: 18px !important;
+    font-weight: 200;
+    margin: 0 0 30px 0 !important;
+    color: #fff !important;
+}
+
+.help_section_text, .help_page_title {
+    color: #1999ff !important;
+    font-weight: 500;
+}
+
+/* Buttons */
+.help_wizard_button {
+    max-width: none !important;
+    background: linear-gradient(135deg, rgba(144, 153, 161, .1) 0%, rgba(144, 153, 161, .06) 100%) !important;
+    border: none !important;
+    border-radius: 3px;
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    padding: 8px !important;
+    height: 44px;
+}
+
+.help_wizard_button:hover {
+    background: rgba(255,255,255,.1) !important;
+}
+
+.help_wizard_button > img {
+    width: 32px;
+    height: 32px;
+    margin: 0 !important;
+}
+
+.help_wizard_button > span {
+    margin: 0 !important;
+}
+
+.btnv6_blue_hoverfade {
+    transition: all .2s ease-out;
+    border-radius: 3px !important;
+}
+
+.btnv6_blue_hoverfade:hover {
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 30%);
+}
+
+.btnv6_blue_hoverfade > span {
+    padding: 7px 20px !important;
+    font-size: 18px !important;
+    line-height: normal !important;
+}
+
+.btn_login_nag_left {
+    background: linear-gradient(to right, #47bfff 0%, #1a44c2 60%) !important;
+    background-position: 25% !important;
+    background-size: 330% 100% !important;
+}
+
+.btn_login_nag_left:hover {
+    background-position: 0% !important;
+}
+
+.btn_login_nag_right {
+    background: #3d4450 !important;
+}
+
+.btn_login_nag_right:hover {
+    background: #464d58 !important;
+}
+
+/* Dividers */
+.help_divider, .help_app_header_divider {
+    background: #2e3033 !important;
+}
+
+/* App information header */
+.help_app_header, .help_login_nag {
+    background: linear-gradient(135deg, rgba(144, 153, 161, .1) 0%, rgba(144, 153, 161, .06) 100%) !important;
+    border-radius: 3px;
+}
+
+.help_purchase_detail_box {
+    background: rgba(0, 0, 0, .25) !important;
+    border-radius: 3px;
+}
+
+/* Search */
+#help_search_support_input {
+    background: #32353c !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 3px;
+    font-style: normal !important;
+}
+
+#help_search_support_input:hover {
+    background: #393c44 !important;
+}

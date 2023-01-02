@@ -17,6 +17,10 @@
       "js": [ "./js/global.js" ]
     },
     {
+      "matches": ["*://help.steampowered.com/*"],
+      "css": [ "./css/help.css" ]
+    },
+    {
       "matches": ["*://*.steampowered.com/agecheck/*"],
       "css": [ "./css/store/agecheck.css" ],
       "js": ["./js/store/agecheck.js"]
